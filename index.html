@@ -1,76 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Giannoulis Sales Manager Services</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>George Giannoulis Sales Manager</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>George Giannoulis Sales Manager Services</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Hotel Room Sales</a></li>
-                <li><a href="#">Greek Tourism Islands</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to George Giannoulis Sales Manager Services</h2>
-            <p>We offer hotel room sales and tourism services throughout Europe with a focus on the beautiful Greek islands.</p>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-    </section>
+  <!-- Header section -->
+  <header>
+    <div class="header-container">
+      <h1>George Giannoulis Sales Manager</h1>
+      <nav>
+        <ul>
+          <li><a href="#islands">Greek Islands</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="islands">
-        <div class="container">
-            <h2>Greek Tourism Islands</h2>
-            <p>Here are some of the most beautiful Greek islands we can help you explore:</p>
-            <ul>
-                <li>
-                    <img src="santorini.jpg" alt="Santorini">
-                    <h3>Santorini</h3>
-                    <p>Santorini is known for its stunning sunsets, picturesque villages, and unique architecture.</p>
-                </li>
-                <li>
-                    <img src="mykonos.jpg" alt="Mykonos">
-                    <h3>Mykonos</h3>
-                    <p>Mykonos is famous for its beautiful beaches, lively nightlife, and charming old town.</p>
-                </li>
-                <li>
-                    <img src="crete.jpg" alt="Crete">
-                    <h3>Crete</h3>
-                    <p>Crete is the largest of the Greek islands and offers a rich history, beautiful beaches, and delicious cuisine.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+  <!-- Greek Islands section -->
+  <section id="islands">
+    <div class="islands-container">
+      <h2>Greek Islands</h2>
+      <p>Experience the beauty of Greece's islands with our help. Choose from our selection of hotel rooms located on some of the most stunning islands in the world.</p>
+      <ul>
+        <li>Santorini</li>
+        <li>Mykonos</li>
+        <li>Crete</li>
+        <li>Rhodes</li>
+        <li>Corfu</li>
+      </ul>
+      <div class="islands-gallery">
+        <img src="santorini.jpg" alt="Santorini">
+        <img src="mykonos.jpg" alt="Mykonos">
+        <img src="crete.jpg" alt="Crete">
+        <img src="rhodes.jpg" alt="Rhodes">
+        <img src="corfu.jpg" alt="Corfu">
+      </div>
+      <a href="#contact" class="btn">Book Now</a>
+    </div>
+  </section>
 
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 George Giannoulis Sales Manager Services</p>
-        </div>
-    </footer>
-
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form action="submit-form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
